@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 
 export interface Context {
-  name: string;
-  setName: (val: string) => void;
+  searchValue: string;
+  setSearchValue: (val: string) => void;
 }
 const defaultVal = {
-  name: "",
-  setName: () => {},
+  searchValue: "",
+  setSearchValue: () => {},
 } as Context;
 
 const context = React.createContext(defaultVal);
@@ -14,8 +14,10 @@ const context = React.createContext(defaultVal);
 const { Provider } = context;
 
 export const ContextWrapper = ({ children }: { children: any }) => {
-  const [name, setName] = useState(defaultVal.name);
-  return <Provider value={{ name, setName }}>{children}</Provider>;
+  const [searchValue, setSearchValue] = useState(defaultVal.searchValue);
+  return (
+    <Provider value={{ searchValue, setSearchValue }}>{children}</Provider>
+  );
 };
 
 export const useAppContext = () => useContext(context);

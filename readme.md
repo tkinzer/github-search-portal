@@ -1,5 +1,12 @@
 # Github Repo Search Portal
 
+TODO:
+
+- Connect to github API to get repo results to display in the list.
+- Add storybook to the project
+- Add fun design/theme
+- Add more tests
+
 ## Development
 
 yarn
