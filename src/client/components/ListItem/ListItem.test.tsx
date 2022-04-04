@@ -4,7 +4,7 @@ import { ListItem } from "./ListItem";
 
 describe("ListItem", () => {
   it("should render the component", () => {
-    const { getByText } = render(<ListItem text="Sample text" />);
-    expect(getByText("Repo")).toBeInTheDocument();
+    const { getByText } = render(<ListItem>Sample text</ListItem>);
+    expect(getByText("Sample Text")).toBeInTheDocument();
   });
 });

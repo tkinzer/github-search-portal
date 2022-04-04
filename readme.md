@@ -2,7 +2,6 @@
 
 TODO:
 
-- Connect to github API to get repo results to display in the list.
 - Add storybook to the project
 - Add fun design/theme
 - Add more tests
@@ -20,3 +19,14 @@ yarn build
 yarn serve
 
 `yarn build` will create the assets in `dist` - a client and server folder. Serve will run `dist/server.js` with Node, but Docker or some other process manager could be used instead depending on the needs.
+
+## Testing
+
+yarn
+yarn test
+
+Run the jest tests.
+
+## Notes
+
+This search app is based off of vite-ts-react boilerplate, as well as leverages tailwind.css for quick prototyping with the styles. In light of the time constraints storybook might not be included, but typically I would recommended using storybook in conjunciton with chromatic.
