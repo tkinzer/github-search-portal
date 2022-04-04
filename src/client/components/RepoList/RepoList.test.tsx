@@ -4,8 +4,8 @@ import { RepoList } from "./RepoList";
 
 describe("RepoList", () => {
   it("should render the component", () => {
-    const { getByText } = render(<RepoList>Sample text</RepoList>);
-    expect(getByText("Sample Text")).toBeInTheDocument();
+    const { getByText } = render(<RepoList />);
+    expect(getByText(/no search value/i)).toBeInTheDocument();
   });
 
   xit("renders the correct number of items in the list", () => {});
