@@ -12,7 +12,7 @@ export const SearchBar = (): JSX.Element => {
   return (
     <div className="p-2">
       <input
-        placeholder={"Search github repositories"}
+        placeholder={"Search repos"}
         onChange={updateSearchValue}
         style={{ background: "#8080802e" }}
         className="focus:ring-indigo-500 focus:border-indigo-500 block w-fit text-2xl border-gray-300 rounded-md p-2"

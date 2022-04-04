@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { useAppContext } from "../../Context";
 import { ListItem } from "../ListItem/ListItem";
 
@@ -17,7 +17,7 @@ async function fetchRepos(searchValue: string) {
   );
 }
 
-export const RepoList = (): JSX.Element => {
+export const RepoList = (props: { children?: ReactNode }): JSX.Element => {
   const { searchValue } = useAppContext();
   const [repos, setRepos] = React.useState<GithubRepoProps[]>([]);
 
