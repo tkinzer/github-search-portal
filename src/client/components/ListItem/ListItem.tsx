@@ -1,8 +1,12 @@
-type ListItemProps = {
-  text: string;
-  children?: React.ReactNode;
-};
+import React from "react";
+
+type ListItemProps = React.PropsWithChildren<{
+  className?: string;
+}>;
 
 export const ListItem = (props: ListItemProps): JSX.Element => {
-  return <li className="border-b border-gray-300">Dummy list item</li>;
+  const listItemClassName = `${
+    props.className || ""
+  } border-b border-gray-300"`;
+  return <li className={listItemClassName}>{props.children}</li>;
 };
