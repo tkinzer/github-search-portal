@@ -1,12 +1,12 @@
 {
-  "name": "vite-typescript-ssr-react",
-  "version": "1.0.0",
-  "description": "Boilerplate for a modern web stack",
+  "name": "github-search-portal",
+  "version": "1.0.1",
+  "description": "Github Search",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonluca/vite-typescript-ssr-react"
+    "url": "https://github.com/tkinzer/github-search-portal"
   },
-  "author": "JonLuca DeCaro",
+  "author": "Timothy Kinzer",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --watch server.ts --watch src/server --exec 'yarn ts-node server.ts'",
