@@ -5,6 +5,6 @@ import { ListItem } from "./ListItem";
 describe("ListItem", () => {
   it("should render the component", () => {
     const { getByText } = render(<ListItem>Sample text</ListItem>);
-    expect(getByText("Sample Text")).toBeInTheDocument();
+    expect(getByText(/sample text/i)).toBeInTheDocument();
   });
 });
