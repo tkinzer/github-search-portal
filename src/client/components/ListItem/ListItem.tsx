@@ -5,8 +5,6 @@ type ListItemProps = React.PropsWithChildren<{
 }>;
 
 export const ListItem = (props: ListItemProps): JSX.Element => {
-  const listItemClassName = `${
-    props.className || ""
-  } border-b border-gray-300"`;
+  const listItemClassName = `${props.className || ""} border-b"`;
   return <li className={listItemClassName}>{props.children}</li>;
 };
